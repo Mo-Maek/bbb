@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+			function setFz() {
+				var dpr = window.devicePixelRatio > 1 ? 1 / window.devicePixelRatio : 1;
+				var oMeta = document.createElement('meta');
+				oMeta.name = 'viewport';
+				oMeta.content = 'width=device-width,initial-scale=' + dpr + ',minimum-scale=' + dpr + ',maximum-scale=' + dpr;
+				document.head.appendChild(oMeta);
+				var wWidth = window.innerWidth;
+				var oHTMl = document.getElementsByTagName('html')[0];
+				oHTMl.style.fontSize = wWidth / 6.4 + 'px';
+			}
+			setFz();
+		</script>
+		<script type="text/javascript" src="js/zepto/zepto.js"></script>
+		<script type="text/javascript" src="js/zepto/touch.js"></script>
+		<script type="text/javascript" src="js/zk.js"></script>
+		<script type="text/javascript" src="js/cm.js"></script>
+		<script type="text/javascript" src="js/data.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.jquery.min.js"></script>
+		<title>特品折扣</title>
+		<link rel="stylesheet" type="text/css" href="css/zk.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper-3.4.2.min.css" />
+	</head>
+
+	<body>
+		<div class="warp">
+			<div class="zhezhao">
+				<div class="sidePullBar">
+					<div class="inpBox">
+						<input type="text" name="" id="" placeholder="搜索商品" />
+						<button><img src="img/search.png"/></button>
+					</div>
+					<ul>
+						<li class="active sidLi">首页</li>
+						<li class="sidLi">女装折扣</li>
+						<li class="sidLi">男装折扣</li>
+						<li class="sidLi">母婴折扣</li>
+						<li class="sidLi">居家百货</li>
+						<li class="sidLi">鞋包折扣</li>
+						<li class="sidLi">美装饰品</li>
+						<li class="sidLi">数码家电</li>
+						<li class="sidLi">时尚资讯</li>
+						<li class="sidLi">穿衣搭配</li>
+						<li class="sidLi">积分商城</li>
+						<li class="sidLi">美食特产</li>
+						<li class="sidLi">文化运动</li>
+						<li class="sidLi">热销爆款</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="header clearfix">
+				<span class="left"></span>
+				<span class="center">
+					特品折扣
+				</span>
+				<span class="right"></span>
+			</div>
+			<!--轮播-->
+			<div class="banner clearfix">
+				<div class="swiper-container" style="width: 100%;height: 2.43rem;">
+					<!--swiper容器[可以随意更改该容器的样式-->
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><img src="img/b1.jpg"></div>
+						<div class="swiper-slide"><img src="img/b2.jpg"></div>
+						<div class="swiper-slide"><img src="img/b3.jpg"></div>
+					</div>
+					<div class="swiper-pagination" style="width: 100px;float: right"></div>
+					<!--分页器-->、
+					<div class="swiper-button-prev"></div>
+					<!--前进按钮-->
+					<div class="swiper-button-next"></div>
+					<!--后退按钮-->
+				</div>
+			</div>
+			<nav id="nav">
+				<ul class="clearfix">
+					<li class="jj"><img src="img/569f3303a2ad8.png" />
+						<p>居家</p>
+					</li>
+					<li><img src="img/569f33381e3b5.png" />
+						<p>女装</p>
+					</li>
+					<li><img src="img/569f3340de022.png" />
+						<p>内衣</p>
+					</li>
+					<li><img src="img/569f334a4e70d.png" />
+						<p>鞋子</p>
+					</li>
+					<li><img src="img/569f33560092e.png" />
+						<p>母婴</p>
+					</li>
+					<li><img src="img/569f3360eee9d.png" />
+						<p>男装</p>
+					</li>
+					<li><img src="img/569f3411685fa.png" />
+						<p>美妆</p>
+					</li>
+					<li><img src="img/569f33feb3876.png" />
+						<p>美食</p>
+					</li>
+				</ul>
+			</nav>
+			<div class="content clearfix">
+				<div class="content-top clearfix">
+					<ul class="ul1">
+						<li class="li1">
+							<div>
+								<h2>今日更新</h2>
+								<p>每日10:00更新</p>
+							</div>
+
+							<img src="img/todynew.png" />
+						</li>
+						<li class="li2">
+							<div>
+								<h2>精选预告</h2>
+								<p>好货早收藏</p>
+							</div>
+
+							<img src="img/55ee257497dd5.png" />
+						</li>
+						<li class="li2">
+							<div>
+								<h2>内部券</h2>
+								<p>全网精品总汇</p>
+							</div>
+
+							<img src="img/55ee25ad427f5.png" /></a>
+						</li>
+						<li class="li2">
+							<div>
+								<h2>美丽说精</h2>
+								<p>女人的购物天堂</p>
+							</div>
+
+							<img src="img/55ee25e227b08.png" />
+						</li>
+						<li class="li2">
+							<div>
+								<h2>天猫精选</h2>
+								<p>正品低价、</p>
+								<p>品质保证</p>
+							</div>
+
+							<img src="img/55ee26066f7d4.png" />
+						</li>
+					</ul>
+				</div>
+				<div class="content-center clearfix">
+					<ul class="clearfix" id="gouwu">
+						<!--<li>
+							<a href="javascript:;"><img src="img/TB1CbgcQVXXXXbpaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" />
+								<p>儿童舞蹈服装练功服女孩吊带</p><span class="s1">￥</span><span class="s2">35.0</span><span class="s3">天猫</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/TB1CbgcQVXXXXbpaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" />
+								<p>儿童舞蹈服装练功服女孩吊带</p><span class="s1">￥</span><span class="s2">35.0</span><span class="s3">天猫</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/TB1CbgcQVXXXXbpaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" />
+								<p>儿童舞蹈服装练功服女孩吊带</p><span class="s1">￥</span><span class="s2">35.0</span><span class="s3">天猫</span></a>
+						</li>
+						<li>
+							<a href="javascript:;"><img src="img/TB1CbgcQVXXXXbpaXXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" />
+								<p>儿童舞蹈服装练功服女孩吊带</p><span class="s1">￥</span><span class="s2">35.0</span><span class="s3">天猫</span></a>
+						</li>-->
+					</ul>
+				</div>
+				<div class="content-bottom">
+					<ul class="clearfix yeshu">
+						<!--<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>-->
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer">
+
+				<ul class="bottom">
+					<li>
+						<a href="#"><i></i><span>首页</span></a>
+					</li>
+					<li>
+						<a href="#"><i></i><span>品牌折扣</span></a>
+					</li>
+					<li>
+						<a href="#"><i></i><span>9.9包邮</span></a>
+					</li>
+					<li>
+						<a href="#"><i></i><span>19.9包邮</span></a>
+					</li>
+					<li>
+						<a href="#"><i></i><span>个人中心</span></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--<script type="text/javascript" src="js/zk.js"></script>-->
+	</body>
+
+</html>
